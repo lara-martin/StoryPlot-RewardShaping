@@ -1,0 +1,40 @@
+{
+  "training": {
+    "optimizer": "adam",
+    "lr": 0.001,
+    "lr_decay":0.99,
+    "epochs": 100,
+    "len_clusters": 30
+  },
+  "management": {
+    "monitor_loss": 1000,
+    "print_samples": false,
+    "evaluate": false
+  },
+  "data": {
+    "src": "../data/bucketed_events_train-baby.txt",
+    "val_src": "../data/bucketed_events_val-baby.txt",
+    "test_src": "../data/bucketed_events_test.txt",
+    "vocab_file": "../scifi-hidden.vocab",
+    "unigram_probs": "../unigram_probs.pickle",
+    "bigram": false,
+    "max_length": 7,
+    "save_dir": "models",
+    "load_dir": false,
+    "preload_weights": ""
+  },
+  "model": {
+    "dim": 512,
+    "use_dropout": false,
+    "dim_word_src": 512,
+    "n_layers_src": 3,
+    "n_layers_trg": 1,
+    "bidirectional": true,
+    "model_name": "E2E-buckets",
+    "decode": "beam_search",
+    "beam_size": 5,
+    "hidden": false,
+    "optimizer": "adam",
+    "dropout":  0.3
+  }
+}

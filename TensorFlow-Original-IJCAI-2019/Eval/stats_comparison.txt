@@ -1,0 +1,65 @@
+DRL model:
+Stories which got to admire:4372
+Total stories generated: 4423
+Percentage of stories getting to admire: 98.84%
+
+Lines to get to admire: 11589
+Average lines to get to admire (in stories which did) = 2.65
+
+Forward (Pre-trained) model:
+Stories which got to admire: 357
+Total stories generated: 4423
+Percentage of stories getting to admire: 8.07%
+
+Lines to get to admire: 1894
+Average lines to get to admire (in stories which did) = 5.30532212885
+
+The above two were done by putting each line in the test data as input to the model and generating a story from that. If within 10 lines the model didn't get to admire, it is assumed that for this input the story won't get to admire and we go on to the next input.
+
+Full Genre68 combined corpus stats (Here we have considered the entire corpus - Train+Test data):
+Setting 1 - Do not reset counter on finding admire (which means if a story has admire occuring 3 times, for each one of them the count of lines added will be from <start of story>. The averaging has been correctly handled so don't worry about that):
+Number of lines to get to admire - 14971
+Number of stories to use for avergaing - 563
+
+Number of stories that have admire in them - 356 
+(This number differs from the number above because admire comes multiple times in stories - 
+We don't want to count them multiple times here)
+Total number of stories - 1063
+
+Avg lines to get to admire - 26.59
+Avg percentage of stories that have admire in it - 33.49%
+
+Setting 2 - Reset the line counter when you see admire (which means if a story has admire occuring 3 times, for each one of them the count of lines added will be from the previous admire and not <start of story>, which makes sense too):
+Everything is the same as Setting 1. Only change:
+Number of lines to get to admire - 9315
+
+Thus, the avg lines to get to admire becomes = 16.54
+
+Setting 3:
+Max_lines = 10
+Num_stories (total lines in training combined file) = 34065
+Got to admire = 4839
+Lines count = 25617
+
+Percentage of stories getting to admire = 14.21%
+Avg lines to get to admire = 5.29
+
+Max_lines = 20
+Num_stories (total lines in training combined file) = 34065
+Got to admire = 8837
+Lines count = 87073
+
+Percentage of stories getting to admire = 25.94%
+Avg lines to get to admire = 9.85
+
+Max_lines = 30
+Num_stories (total lines in training combined file) = 34065
+Got to admire = 12276
+Lines count = 174386
+
+Percentage of stories getting to admire = 36.04%
+Avg lines to get to admire = 14.21
+
+
+
+

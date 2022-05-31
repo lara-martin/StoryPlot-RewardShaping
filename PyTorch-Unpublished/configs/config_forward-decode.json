@@ -1,0 +1,41 @@
+{
+  "training": {
+    "optimizer": "adam",
+    "lr": 0.001,
+    "lr_decay":0.99,
+    "epochs": 20,
+    "len_clusters": 30,
+    "goal_verb": "discover-84"
+  },
+  "management": {
+    "monitor_loss": 1000,
+    "print_samples": false,
+    "evaluate": false
+  },
+  "data": {
+    "src": "data/bucketed_events_train.txt",
+    "val_src": "data/bucketed_events_val.txt",
+    "test_src": "data/bucketed_events_test.txt",
+    "combined_src": "data/bucketed_events-DRL.txt",
+    "vocab_file": "scifi-hidden.vocab",
+    "unigram_probs": "unigram_probs.pickle",
+    "bigram": false,
+    "max_length": 7,
+    "save_dir": "/media/eilab/bd94e06c-afd2-4073-bb4f-a283b64dc505/Dropbox (GaTech)/Chicken/ASTER/E2E/TF2PyTorch-PolicyGradientDRL/ForwardModel/models",
+    "preload_weights": "model_E2E-buckets___2019-09-04_hidden_False__dim_512__emb_dim_512__optimizer_adam__n_layers_src_3__n_layers_trg_1__bidir_True__epoch_10.model"
+  },
+  "model": {
+    "dim": 512,
+    "use_dropout": false,
+    "dim_word_src": 512,
+    "n_layers_src": 3,
+    "n_layers_trg": 1,
+    "bidirectional": true,
+    "model_name": "DRL",
+    "decode": "beam_search",
+    "beam_size": 5,
+    "hidden": false,
+    "optimizer": "adam",
+    "dropout":  0.3
+  }
+}

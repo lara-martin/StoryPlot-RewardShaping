@@ -1,0 +1,43 @@
+Full Genre68 combined corpus stats:
+(Setting 1 - Do not reset counter on finding admire):
+Number of lines to get to admire - 14971
+Number of stories to use for avergaing - 563
+
+Number of stories that have admire in them - 356 
+(This number differs from the number above because admire comes multiple times in stories - 
+We don't want to count them multiple times here)
+Total number of stories - 1063
+
+Avg lines to get to admire - 26.59
+Avg percentage of stories that have admire in it - 33.49%
+
+(Setting 2 - Reset the line counter when you see admire)
+Everything is the same. Only change:
+Number of lines to get to admire - 9315
+
+Thus, the avg lines to get to admire becomes = 16.54
+
+Setting 3:
+Max_lines = 10
+Num_stories (total lines in training combined file) = 34065
+Got to admire = 4839
+Lines count = 25617
+
+Percentage of stories getting to admire = 14.21%
+Avg lines to get to admire = 5.29
+
+Max_lines = 20
+Num_stories (total lines in training combined file) = 34065
+Got to admire = 8837
+Lines count = 87073
+
+Percentage of stories getting to admire = 25.94%
+Avg lines to get to admire = 9.85
+
+Max_lines = 30
+Num_stories (total lines in training combined file) = 34065
+Got to admire = 12276
+Lines count = 174386
+
+Percentage of stories getting to admire = 36.04%
+Avg lines to get to admire = 14.21

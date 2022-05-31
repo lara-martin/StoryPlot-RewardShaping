@@ -1,0 +1,66 @@
+Model 4 was used 
+4,Forward, Testing
+
+
+
+15 clusters - 10 lines per story - Avg = 2.65
+22 clusters: 
+	- 10 lines per story
+		- Avg = 3.85248953001
+		- percentage = 97.17%
+	- 20 lines per story 
+		- Avg = 4.15539470708
+		- percentage = 99.95%
+	- 30 lines per story
+		- Avg = 4.13726820443 
+		- percentage = 99.97%
+
+30 clusters(3): 
+	- 10 lines per story
+		- Avg = 4.14521696252
+		- percentage = 91.70%
+	- 20 lines per story
+		- Avg = 4.87414965986
+		- percentage = 99.70%
+	- 30 lines per story 
+		- Avg = 4.87358661239
+		- percentage = 99.97%
+
+30 clusters(Biased model 4): 
+	- 10 lines per story
+		- Avg = 4.13907117617
+		- percentage = 89.5772100384%
+		- probability value = 0.405460837786
+	- 20 lines per story
+		- Avg = 4.93308974652
+		- percentage = 99.0052%
+		- probability value = 0.180746085668
+	- 30 lines per story
+		- Avg = 5.01000909918
+		- percentage = 99.3895546009%
+		- probability value = 0.183594853854
+
+Forward: 
+	- 10 lines 
+		- Avg = 5.50154798762
+		- percentage = 8.32%
+		- Average Probability: 0.342329207973
+	- 20 lines
+		- Avg = 9.8846
+		- percentage = 15.2837%
+	- 30 lines
+		- Avg = 14.4792719919
+		- percentage = 22.36038%
+
+30 clusters(Sampling verb from forward model 5):
+	- 10 lines
+		- Avg = 4.09214579055
+		- percentage = 88.0850101741%
+		- Average Probability: 0.391514129065
+	- 20 lines
+		- Avg = 5.14953271028
+		- percentage = 99.1860728013%
+	- 30 lines
+		- Avg = 5.29173272933
+		- percentage = 99.8191272892%
+
